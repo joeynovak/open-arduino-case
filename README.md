@@ -3,6 +3,7 @@ A tool for generating dxf files for laser cut cases (Arduino, RaspPi, etc...)
 
 ##Description
 Open Case is an OpenScad file which can easily be used to generate any size of case.  You define the internal dimensions, your material thickness, the "padding", and the overhang (see: 
+
 ##Dimensions
 The dimensions of the box are defined in the first few lines of the file.  Below is an example configuration (this is for an Arduino Uno (with USB Mini instead of Micro), with a HR911105A Ethernet Board next to it, with enough height to wire the two together using jumpers.)  
 
@@ -61,3 +62,11 @@ Padding is similar to HTML padding.  Padding is added to the inside width and he
 
 ##Exporting DXF Files
 To Export the case pieces to DXF files, you have to press F6, and actually "Render" the file.  For whatever reason OpenScad's "projection" function doesn't do anything until you do an "official" render.  Once you've rendered the file, you can go to File -> Export -> Export As DXF
+
+##Planned Improvements
+Currently, the code is crap.  I just wanted to get it done, and am not THAT experienced with OpenSCAD, so there is A LOT of duplicated code, and some very messy math expressions.  
+
+An option to render a fully assembled Case, instead of just the pieces.
+
+#Change Log
+* Initial Release (Joey Novak)
